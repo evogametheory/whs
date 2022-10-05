@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Bill Sandholm - The Logit Movie</title>
+</head>
+
+<h1 align=center>The Logit Movie</h1>
+
+
+<p align=center><img src="logitmovie.gif"></p>
+
+<br>
+<p>What's going on here?</p>
+
+<p>Consider a large population of agents who are recurrently randomly matched to play this three-strategy coordination game:</p>
+
+<br>
+
+<table border align=center>
+<tr>
+<th>1, 1  </th>
+<th>0, 0  </th>
+<th>0, 0  </th>
+</tr>
+<tr>
+<th>0, 0  </th>
+<th>2, 2  </th>
+<th>0, 0  </th>
+</tr>
+<tr>
+<th>0, 0</th>
+<th>0, 0</th>
+<th>3, 3</th>
+</tr>
+</table>
+<br>
+
+
+<p>As time passes, agents revise their choices according to the following protocol:  in each (short) time period, one agent is chosen at random and given the opportunity to switch strategies.  This agent decides which strategy to play next using the <i>logit choice rule</i> with <i>noise level</i> &eta; > 0.  This means that when the strategies' expected payoffs are (&pi;[1], &pi;[2], &pi;[3]), the revising agent chooses strategy i with probability proportional to exp(&pi;[i]/&eta;).</p>
+
+<p>Over finite time spans, the aggregate behavior induced by this revision protocol can be described by an ordinary differential equation called the <i>logit dynamic</i>  (see, e.g., Hofbauer and Sandholm (2005)).  Rest points of this dynamic are called <i>logit equilibria</i>.</p>
+
+<p>Each frame in the movie is a phase diagram for the logit dynamic for some fixed noise level &eta;.  Stable rest points are drawn in black, and unstable ones in white; solution trajectories appear as arrows; and background colors represent speed of motion:  blue is slowest, red is fastest.</p>
+
+<p>The movie as a whole shows how the logit dynamic changes as we vary &eta;.  At low noise levels, the dynamic is very nearly Gilboa and Matsui's (1991) <i>best response dynamic</i>:  within each basin of attraction, motion is almost directly toward a rest point approximating the relevant pure equilibrium.  As the noise level increases from &asymp;0 to 1, the phase diagram changes dramatically:  for instance, the number of rest points begins at 7, soon drops to 5 (at &eta; &asymp; .22), then to 3 (at &eta; &asymp; .28), and finally to 1 (at &eta; &asymp; .68).  As the noise level is increased further, agents' choices become essentially random, driving the lone rest point to the center of the simplex.  (For some perspective on these numbers:  logit choice can be derived from a model in which each strategy's payoff is randomly perturbed; a noise level of &eta; corresponds to a standard deviation of only &asymp;1.28 &eta;.  Thus, payoff shocks with a standard deviation of just .87 are enough to kill off all but one of the rest points!)</p>
+
+<p>In the experimental literature, rest points of the logit dynamic are often called <i>quantal response equilibria</i> (QRE).  McKelvey and Palfrey (1995) note that the QRE is unique when &eta; is large, and that if we reduce &eta; continuously, this QRE moves continuously as well.  Thus, taking the limit of these QRE as &eta; approaches zero defines an equilibrium selection device.</p>
+
+<p>Now look again at the logit movie.  Wait until the noise level reaches its maximum, so that the logit equilibrium is unique, and then follow the path that this equilibrium takes as the noise level drops.  As you can see, McKelvey and Palfrey's method selects the (3, 3) equilibrium in this game.</p>
+
+<br>
+<p><a href="../index.html">To the Dynamo homepage</a>.</p>
+<p><a href="../../book/index.html">To the <i>Population Games and Evolutionary Dynamics</i> homepage</a>.</p>
+<p><a href="../../index.html">To my homepage</a>.</p>
+</body>
+
+</html>

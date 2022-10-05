@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Bill Sandholm - Chaos in Rock-Paper-Scissors</title>
+</head>
+<h1 align=center>Chaos in Rock-Paper-Scissors</h1>
+
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="1000" height="560">
+	<param name="movie" value="RPSchaos.swf">
+	<param name="quality" value="high">
+	<param name="bgcolor" value="#FFFFFF">
+	<embed name="RPSchaos" src="RPSchaos.swf" width="1000" height="560" quality="high" bgcolor="#FFFFFF" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object>
+<br>
+<p>What is this?<p>
+Suppose that members of two populations are randomly matched to play the following version of Rock-Paper-Scissors:</p>
+
+
+<br>
+
+
+<table border align=center>
+
+<tr>
+<th width="18%"> </th><th>r  </th>
+<th>p </th>
+<th>s  </th>
+</tr>
+
+<tr>
+<th>R </th><th>1, -1  </th>
+<th>-2, 2  </th>
+<th>2, -2  </th>
+</tr>
+
+<tr>
+<th>P  </th><th>2, -2  </th>
+<th>1, -1  </th>
+<th>-2, 2  </th></tr>
+
+<tr>
+<th>S  </th><th>-2, 2</th>
+<th>2, -2</th>
+<th>1, -1</th>
+</tr>
+
+</table>
+
+<br>
+
+
+
+<p>In this version of RPS, winning a match is worth 2 and losing -2.  But if a match is a "draw", in the sense that both agents in the match choose the same strategy, it is counted as a "half-win" for player 1:  that is, player 1 gets a payoff of 1, and player 2 gets a payoff of -1.  
+
+<p>Follwoing  Sato, Akiyama, and Farmer (2002), we consider the evolution of the population's behavior under the replicator dynamic.  This dynamic is defined by the property that the percentage growth rate in the use of each strategy is given by the strategy's excess payoff - that is, by the difference between its payoff and the average payoff obtained in the relevant population.  
+
+<p>The solution shown in the animation starts from initial condition ((x[R], x[P], x[S]), (y[r], y[s], y[p])) = ((.5, .01, .49), (.5, .25, .25)), and runs for 100 time units.  The top row of diagrams describe behavior in population 1 and the bottom row of diagrams present behavior in population 2.  Evidently, the evolution of behavior is chaotic: rather than converging to an equilibrium or approaching a periodic orbit, the trajectory traverses the state space in an irregular and unpredictable manner.  
+
+ 
+<br>
+
+<p><a href="../index.html">To the Dynamo homepage</a>.</p>
+
+<p><a href="../../book/index.html">To the <i>Population Games and Evolutionary Dynamics</i> homepage</a>.</p>
+
+<p><a href="../../index.html">To my homepage</a>.</p>
+</body>
+</html>
